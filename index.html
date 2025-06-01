@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Một Chút Ngọt Ngào</title>
+  <style>
+    body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(#0b0b1a, #000);
+  font-family: 'Arial', sans-serif;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+
+  box-sizing: border-box;
+  padding: 20px;
+
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(#0b0b1a, #000);
+      font-family: 'Arial', sans-serif;
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(90deg, #ff66cc, #66ffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p {
+      font-size: 1.1rem;
+      max-width: 500px;
+      margin: 10px auto 30px;
+      color: #ccc;
+    }
+    .buttons {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .buttons a {
+      padding: 12px 24px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .create {
+      background: #ff66cc;
+      color: white;
+    }
+    .demo {
+      background: #0ff;
+      color: #000;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .feature {
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 12px;
+    }
+    .feature img {
+      height: 40px;
+      margin-bottom: 10px;
+    }
+  
+    img, canvas {
+      max-width: 100%;
+      height: auto;
+    }
+    #love-days {
+      font-size: 1.2rem;
+      margin-top: 20px;
+      color: #fff;
+    }
+    
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+    img, canvas {
+      max-width: 100%;
+      height: auto;
+    }
+
+    #love-days {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      color: #fff;
+      padding: 0 15px;
+      text-align: center;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .buttons a {
+      padding: 12px 24px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.7rem;
+        padding: 0 15px;
+        line-height: 1.4;
+      }
+      p {
+        font-size: 1rem;
+        padding: 0 15px;
+      }
+      .buttons {
+        flex-direction: column;
+        padding: 0 10px;
+      }
+      .features {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+      }
+      canvas {
+        max-height: 300px;
+      }
+    }
+    </style>
+</head>
+<body>
+  <h1>Một Chút Ngọt Ngào – Một Trời Hạnh Phúc</h1>
+  <p>Tạo ra những món quà tinh thần dễ thương, những lời chúc ngọt ngào, những điều bé nhỏ nhưng đầy ý nghĩa để khiến ai đó mỉm cười.</p>
+  <div class="buttons">
+    <a class="create" href="#">🌟 Nhấn nút Play bên cạnh</a>
+    <a class="demo" href="demo.html">▶️ PLAY</a>
+  </div>
+<style>
+@keyframes 
+
+    img, canvas {
+      max-width: 100%;
+      height: auto;
+    }
+    #love-days {
+      font-size: 1.2rem;
+      margin-top: 20px;
+      color: #fff;
+    }
+    
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+    img, canvas {
+      max-width: 100%;
+      height: auto;
+    }
+
+    #love-days {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      color: #fff;
+      padding: 0 15px;
+      text-align: center;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .buttons a {
+      padding: 12px 24px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.7rem;
+        padding: 0 15px;
+        line-height: 1.4;
+      }
+      p {
+        font-size: 1rem;
+        padding: 0 15px;
+      }
+      .buttons {
+        flex-direction: column;
+        padding: 0 10px;
+      }
+      .features {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+      }
+      canvas {
+        max-height: 300px;
+      }
+    }
+    </style>
+
+
+<canvas id="fireworksCanvas"></canvas>
+<script>
+  const canvas = document.getElementById("fireworksCanvas");
+  const ctx = canvas.getContext("2d");
+  canvas.style.position = "fixed";
+  canvas.style.top = 0;
+  canvas.style.left = 0;
+  canvas.style.pointerEvents = "none";
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  function random(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+
+  class Particle {
+    constructor(x, y, color) {
+      this.x = x;
+      this.y = y;
+      this.radius = random(2, 4);
+      this.color = color;
+      this.speed = random(2, 6);
+      this.angle = random(0, 2 * Math.PI);
+      this.alpha = 1;
+    }
+
+    update() {
+      this.x += Math.cos(this.angle) * this.speed;
+      this.y += Math.sin(this.angle) * this.speed;
+      this.alpha -= 0.005;
+    }
+
+    draw(ctx) {
+      ctx.save();
+      ctx.globalAlpha = this.alpha;
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+      ctx.fillStyle = this.color;
+      ctx.fill();
+      ctx.restore();
+    }
+  }
+
+  let particles = [];
+  function explode(x, y) {
+    const colors = ["#ff0000", "#ff8000", "#ffff00", "#00ff00", "#00ffff", "#0000ff", "#ff00ff", "#ffffff"];
+    for (let i = 0; i < 150; i++) {
+      particles.push(new Particle(x, y, colors[Math.floor(Math.random() * colors.length)]));
+    }
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles = particles.filter(p => p.alpha > 0);
+    particles.forEach(p => {
+      p.update();
+      p.draw(ctx);
+    });
+    requestAnimationFrame(animate);
+  }
+
+  canvas.addEventListener("click", (e) => explode(e.clientX, e.clientY));
+  setInterval(() => explode(random(100, canvas.width - 100), random(100, canvas.height - 100)), 300);
+  animate();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    background: black;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+#love-days {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: #ff66cc;
+    text-shadow: 0 0 10px #ff66cc;
+    z-index: 2;
+}
+#container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+.falling-text {
+    position: absolute;
+    color: #ff66cc;
+    text-shadow: 0 0 8px #ff66cc;
+    font-size: 22px;
+    animation: fall linear infinite;
+}
+.falling-image {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    animation: fall linear infinite;
+    box-shadow: 0 0 15px #ff66cc;
+}
+.star-glow {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 6px #ffffffaa;
+    animation: twinkle 2s infinite ease-in-out;
+}
+@keyframes twinkle {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.5); }
+}
+@keyframes fall {
+    0% { transform: translateY(-10%); opacity: 1; }
+    100% { transform: translateY(110vh); opacity: 0; }
+}
+canvas#starfield {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+@media (max-width: 768px) {
+    #love-days {
+        font-size: 18px;
+    }
+    .falling-text {
+        font-size: 16px;
+    }
+    .falling-image {
+        width: 80px;
+    }
+}
+
+.falling-text, .falling-image {
+    margin-left: 1cm;
+    margin-right: 1cm;
+}
+
+
+.falling-icon {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  z-index: 9999;
+  pointer-events: none;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+  }
+
+.falling-icon {
+  position: fixed;
+  top: -50px;
+  font-size: 1.8rem;
+  animation-name: fall-spin;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  z-index: 10;
+  pointer-events: none;
+}
+
+@keyframes fall-spin {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg) scale(0.8);
+    opacity: 0;
+  }
+}
